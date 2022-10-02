@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/first_screen"
+    android:columnCount="2"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/library"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/agker"
+        android:text="Library"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TableLayout
+        android:id="@+id/table_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/library" >
+        <TableRow
+            android:background="@color/white"
+            android:alpha="0.9">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:textColor="@android:color/white"
+                android:text="Book name : "
+                android:textSize="14sp"
+                android:padding="10sp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"/>
+            <TextView
+                android:id="@+id/Bname"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:textSize="14sp"
+                android:padding="10sp"
+                android:layout_weight="4"
+                android:outlineSpotShadowColor="@color/white"
+                android:background="@color/white"
+                android:layout_margin="1dp"/>
+
+        </TableRow>
+        <TableRow
+            android:background="@color/white"
+            android:alpha="0.8"
+            android:id="@+id/row">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:textColor="@android:color/white"
+                android:text="Author :"
+                android:textSize="10sp"
+                android:padding="10sp"
+                android:layout_weight="1"
+                android:layout_margin="1dp" />
+            <TextView
+                android:id="@+id/Author"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:textSize="10sp"
+                android:padding="10sp"
+                android:layout_weight="4"
+                android:layout_margin="1dp"/>
+
+        </TableRow>
+        <TableRow
+            android:background="@color/white"
+            android:alpha="0.8"
+            android:id="@+id/row1">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:textColor="@android:color/white"
+                android:text="Issue date :"
+                android:textSize="10sp"
+                android:padding="10sp"
+                android:layout_weight="1"
+                android:layout_margin="1dp" />
+            <TextView
+                android:id="@+id/IssueDate"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:textSize="10sp"
+                android:padding="10sp"
+                android:layout_weight="4"
+                android:layout_margin="1dp"/>
+
+        </TableRow>
+        <TableRow
+            android:background="@color/white"
+            android:alpha="0.8"
+            android:id="@+id/row2">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:textColor="@android:color/white"
+                android:text="Due date :"
+                android:textSize="10sp"
+                android:padding="10sp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"/>
+            <TextView
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:id="@+id/DueDate"
+                android:textSize="10sp"
+                android:padding="10sp"
+                android:layout_weight="4"
+                android:layout_margin="1dp"/>
+        </TableRow>
+        <TableRow
+            android:background="@color/white"
+            android:alpha="0.8"
+            android:id="@+id/row3">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:textColor="@android:color/white"
+                android:text="Due(if any) :"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:padding="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:textColor="@android:color/black"
+                android:text=""
+                android:id="@+id/Due"
+                android:textSize="10sp"
+                android:padding="10sp"
+                android:layout_weight="4"
+                android:layout_margin="1dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/table_Layout"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:alpha="1"
+        android:enabled="false"
+        android:text="Pay Due amount"
+        android:textColor="@color/white" />
+</RelativeLayout>

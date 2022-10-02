@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/first_screen"
+    android:columnCount="2"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:rowCount="5"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="171dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/iipe_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/agker"
+        android:text="Welcome to IIPE Vizag"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:fontFamily="@font/agker"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:text="Login as" />
+
+    <Button
+        android:id="@+id/student"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:alpha="0.8"
+        android:fontFamily="@font/agker"
+        android:text="Student"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/faculty"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill_horizontal"
+        android:alpha="0.8"
+        android:fontFamily="@font/agker"
+        android:text="Faculty"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/guest"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center_horizontal"
+        android:alpha="0.8"
+        android:fontFamily="@font/agker"
+        android:text="Guest"
+        android:textColor="@color/white" />
+
+</GridLayout>
